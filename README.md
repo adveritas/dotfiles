@@ -1,6 +1,6 @@
 ## Installation
 
-<details>
+
 <summary><h3>Required Dependencies</h3></summary>
 
 - Install official packages using pacman and AUR packages with yay. 
@@ -15,5 +15,5 @@ yay -S python-pywal16
 
 ```
 
-</details>
+
 
