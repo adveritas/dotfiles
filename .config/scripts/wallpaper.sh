@@ -4,6 +4,8 @@
 WALLPAPER_DIR="$HOME/.config/wallpapers"
 
 WALLPAPER_PATH=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)
+WALLPAPER_EXT="${WALLPAPER_PATH##*.}"
+cp $WALLPAPER_PATH ~/.cache/cached-wallpaper.$WALLPAPER_EXT
 
 wal -i "$WALLPAPER_PATH"
 
