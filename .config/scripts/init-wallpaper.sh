@@ -1,13 +1,12 @@
 #!/bin/bash
 
-WALLPAPER_CACHE="$HOME/current-wallpaper"
+WALLPAPER_CACHE="$HOME/.cache/current-wallpaper"
 
 if [[ -f "$WALLPAPER_CACHE" ]]; then
     WALLPAPER_PATH=$(cat "$WALLPAPER_CACHE")
     
     if [[ -f "$WALLPAPER_PATH" ]]; then
         swww img "$WALLPAPER_PATH"
-        source "$HOME/.cache/wal/colors.sh"
         wal -i "$WALLPAPER_PATH"
         
         echo "Wallpaper set to $WALLPAPER_PATH and pywal colors applied."
