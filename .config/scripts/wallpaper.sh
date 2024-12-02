@@ -12,3 +12,5 @@ swww img "$WALLPAPER_PATH"
 source "$HOME/.cache/wal/colors.sh"
 
 echo "Wallpaper set to: $WALLPAPER_PATH"
+
+echo "$WALLPAPER_PATH" > ~/.cache/current-wallpaper
