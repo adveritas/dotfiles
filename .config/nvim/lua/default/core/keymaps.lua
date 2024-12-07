@@ -15,3 +15,6 @@ keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>e", { desc = "Make splits equal size" })
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+
+--reload pywal
+keymap.set("n", "<leader>pr", ":Lazy reload pywal16.nvim<CR>", { desc = "Reload pywal16" })
